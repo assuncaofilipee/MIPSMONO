@@ -6,7 +6,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Banco_Registradores is
 
- Port (    clk : in  STD_LOGIC;
+ Port ( clk : in  STD_LOGIC;
            EscReg : in  STD_LOGIC;--rf_wr
            Reg_a_ser_lido1 : in  STD_LOGIC_VECTOR (4 downto 0);
            Reg_a_ser_lido2 : in  STD_LOGIC_VECTOR (4 downto 0);
@@ -38,22 +38,22 @@ signal memoria: rom := (
 			x"0000000D",
 			x"0000000E",
 			x"0000000F",
-			x"00000010",
-			x"00000011",
-			x"00000012",
-			x"00000013",
-			x"00000014",
-			x"00000015",
-			x"00000016",
-			x"00000017",
-			x"00000018",
-			x"00000019",
-			x"0000001A",
-			x"0000001B",
-			x"0000001C",
-			x"0000001D",
-			x"0000001E",
-			x"0000001F",
+			x"0000000F",
+			x"00000001",
+			x"00000001",
+			x"00000001",
+			x"00000001",
+			x"00000001",
+			x"00000001",
+			x"00000001",
+			x"00000001",
+			x"00000001",
+			x"00000001",
+			x"00000001",
+			x"00000001",
+			x"00000001",
+			x"00000001",
+			x"00000001",
 			others=>X"00000000"
 			);
 begin
